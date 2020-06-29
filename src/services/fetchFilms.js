@@ -3,11 +3,11 @@ import axios from 'axios';
 const BASE_URL = 'https://api.themoviedb.org/3/';
 const API_KEY = 'api_key=cd63754c163362d286a1beca715e81c7';
 
-// https://api.themoviedb.org/3/movie/181812?api_key=cd63754c163362d286a1beca715e81c7&language=en-US
+// https://api.themoviedb.org/3/movie/181812?api_key=5ef9cc135437f500388b7618&language=en-US
 // https://api.themoviedb.org/3/movie/{movie_id}/credits?api_key=<<api_key>>
-// https://api.themoviedb.org/3/movie/76341/reviews?api_key=cd63754c163362d286a1beca715e81c7&language=en-US&page=1
+// https://api.themoviedb.org/3/movie/76341/reviews?api_key=5ef9cc135437f500388b7618&language=en-US&page=1
 
-// https://api.themoviedb.org/3/search/movie?api_key=cd63754c163362d286a1beca715e81c7&language=en-US&query=iron&page=1&include_adult=false
+// https://api.themoviedb.org/3/search/movie?api_key=5ef9cc135437f500388b7618&language=en-US&query=iron&page=1&include_adult=false
 
 export const getPopularFilms = () =>
   axios
