@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+  }
+  
+  .navList {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .navListItem {
+    width: 50%;
+  }
+  
+  .navListItemLink {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    background-color: rgb(21, 255, 0);
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navListItemActive {
+    background-color: blueviolet;
+  }
+  
