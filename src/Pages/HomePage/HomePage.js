@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as fetchFilms from '../../services/fetchFilms';
-import FilmList from '../FilmList/FilmList';
+import FilmList from '../../components/FilmList/FilmList';
 import Styles from './HomePage.module.css';
 
 export default class HomePage extends Component {

@@ -4,7 +4,7 @@ import Navigation from './components/Navigation/Navigation';
 import StartLoader from './components/StartLoader/StartLoader';
 
 const asyncHomePage = lazy(() =>
-  import('./components/HomePage/HomePage' /* webpackChunkName: "home-page" */),
+  import('./Pages/HomePage/HomePage' /* webpackChunkName: "home-page" */),
 );
 
 const asyncMoviesPage = lazy(() =>

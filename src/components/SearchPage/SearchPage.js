@@ -8,7 +8,7 @@ import StartLoader from '../StartLoader/StartLoader';
 
 const asyncMovieDetailsPage = lazy(() =>
   import(
-    '../MovieDetailsPage/MovieDetailsPage' /* webpackChunkName: "movieDetails-page" */
+    '../../Pages/MovieDetailsPage/MovieDetailsPage' /* webpackChunkName: "movieDetails-page" */
   ),
 );
 
