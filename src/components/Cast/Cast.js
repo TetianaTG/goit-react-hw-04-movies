@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as fetchFilms from '../../services/fetchFilms';
-import getImageSrcString from '../../helpers/getImageSrcString';
 import Styles from './Cast.module.css';
 
 export default class Cast extends Component {
@@ -12,7 +11,7 @@ export default class Cast extends Component {
       }),
     }),
   };
-
+  
   state = {
     filmCast: null,
   };
@@ -34,7 +33,7 @@ export default class Cast extends Component {
             {filmCast.map(({ id, name, profile_path }) => (
               <li className={Styles.castListItem} key={id}>
                 <img
-                  src={getImageSrcString(profile_path)}
+                 src= {`https://image.tmdb.org/t/p/w500${profile_path}`}
                   alt="some alt"
                   width="100"
                   height="125"

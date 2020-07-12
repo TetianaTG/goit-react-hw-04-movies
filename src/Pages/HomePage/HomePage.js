@@ -6,12 +6,18 @@ import Styles from './HomePage.module.css';
 export default class HomePage extends Component {
   state = {
     films: [],
+    errorMessage: null,
   };
 
   componentDidMount() {
     fetchFilms
       .getPopularFilms()
-      .then(films => this.setState({ films: [...films] }));
+      .then(films => this.setState({ films: [...films] }))
+      .catch(error =>
+        this.setState({
+          errorMessage: error.response.data.status_message,
+        })
+      )
   }
 
   render() {
